@@ -1,0 +1,25 @@
+# Pinned versions used for the thesis results (Python 3.12, CUDA GPU).
+
+# Training / evaluation
+tensorflow==2.20.0
+keras==3.12.0
+h5py==3.15.1              # RadImageNet .h5 weights
+numpy==2.2.5
+pandas==2.3.3
+scikit-learn==1.7.2
+scipy==1.16.3
+pillow==12.0.0
+matplotlib==3.10.7
+seaborn==0.13.2
+tabulate==0.10.0          # evaluate.py table (DataFrame.to_markdown)
+
+# TorchIO augmentation (src/mri_augment.py; off by default but imported)
+torch==2.12.0
+torchio==1.2.0
+
+# Slice extraction (preprocessing/scripts/extract_slices.py)
+nibabel==5.4.2
+
+# ABIDE download (abide/download_ants.py)
+boto3==1.38.3
+botocore==1.38.3

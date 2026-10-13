@@ -1,0 +1,51 @@
+# Data (GSP / ABIDE images, slices, phenotypes, generated splits)
+data/*
+data/**/*.png
+
+# GSP subject lists are generated locally by splits/make_gsp_split.py
+splits/*.txt
+splits/data_split_GSP*.json
+
+# Run outputs, tables, figures and logs
+results*/
+logs/
+
+# Pretrained weights (RadImageNet .h5 files)
+pretrained_weights/
+
+# Python cache / compiled
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environments and secrets
+.env*
+.venv/
+venv/
+
+# OS cruft
+.DS_Store
+
+# CAT12 standalone install and per-subject CAT12 files
+CAT12*/
+*_MCR_*/
+v232/
+*processing_log.txt
+batch_temp.m
+
+# Imaging volumes and arrays
+*.nii*
+*.dcm
+*.npy
+*.npz
+
+# Trained models
+*.h5
+*.keras
+*.pkl
+
+# Tabular outputs (per-run predictions, phenotype tables)
+*.csv
+*.tsv
